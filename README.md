@@ -1,2 +1,2 @@
 # Maya-Thompson
-Hi! I'm Spongebob! :3
+Hi! I'm Spongebob!

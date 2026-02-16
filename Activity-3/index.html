@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3: Dynamic Greeting Card</title>
+    <link rel= "stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Activity 3: Dynamic Greeting Card</h1>
+    <p>Open the browser console (F12) or ctrl+shift+j to see the JavaScript output!</p>
+<!-- This is the base dynamic card that appears when the website is first loaded-->
+    <div class="card-container">
+        <h2 id="greeting-message">Welcome!</h2>
+        <img id="greeting-image" src="https://fastly.picsum.photos/id/723/200/200.jpg?hmac=_sO25hgEAx99R1W5nOFsCmrSDTpHGmXIEXDywKpjfXE" alt="Welcome Greeting">
+    </div>
+<!--These are the buttons that have the functions found in scripts.js that when pressed change the type of greeting-->
+    <div class="controls">
+        <h3>Change Greeting:</h3>
+        <button onclick="setBirthdayGreeting()">Birthday</button>
+        <button onclick="setHolidayGreeting()">Holiday</button>
+        <button onclick="setThankYouGreeting()">Thank You</button>
+        <button onclick="setWelcomeGreeting()">Welcome</button>
+        <button onclick="setRandomGreeting()">Random</button>
+    </div>
+<!--This is the text field that is added to the card if the user wishes to, it is not necessary-->
+<div class="personalize">
+        <h3>Personalize:</h3>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="personalizeGreeting()">Add Name</button>
+    </div>
+<!--This is changed in scripts.js with the .innerHTML-->
+    <div id ="output">
+        
+    </div>
+
+
+    <script src ="scripts.js"></script>
+
+</body>
+</html>
